@@ -1,0 +1,7 @@
+#import dependencies
+import numpy
+import sys
+import nltk
+nlkt.download('stopwards')
+from nlkt.tokenize import RegexpTokenizer
+from nltk.crpus import

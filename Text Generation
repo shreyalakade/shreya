@@ -1,0 +1,21 @@
+#import dependencies
+import numpy
+import sys
+import nltk
+nlkt.download('stopwards')
+from nlkt.tokenize import RegexpTokenizer
+from nltk.corpus import stopwards
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, LSTM
+from keras.utils import np_utils
+from keras.callbacks import ModelCheckpoint
+#load data
+file= open("frankenstein-2.txt").read()
+#tokenization
+#standardization
+def tokenize_words(input):
+    input= input.lower()
+    tokenizer= RegexpTokenizer(r'\W+')
+    tokens= tokenizer.tokenize(input)
+    filtered=filter(lambda token: token not in stopwords.words('english'),tokens)
+    

@@ -153,7 +153,6 @@
 </selector>
 
 <!-- colors.xml -->
-
 <?xml version="1.0" encoding="uft-8"?>
 <resources>
    <color name="colorPrimary">#385998</color>
